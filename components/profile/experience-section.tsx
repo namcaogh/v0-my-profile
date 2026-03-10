@@ -4,17 +4,15 @@ import { Building2, ExternalLink } from "lucide-react";
 
 const experiences = [
   {
-    company: "Robert Bosch Vietnam",
-    role: "Software Engineer",
-    period: "Hiện tại",
+    company: "Robert Bosch Việt Nam",
+    role: "Kỹ sư Phần mềm",
     description: "Phát triển phần mềm nhúng cho các sản phẩm automotive và IoT.",
     tags: ["Embedded", "Automotive", "C/C++"],
     current: true,
   },
   {
     company: "Renesas Electronics",
-    role: "Software Engineer",
-    period: "Trước đó",
+    role: "Kỹ sư Phần mềm",
     description: "Phát triển firmware và driver cho các vi điều khiển công nghiệp.",
     tags: ["Firmware", "Driver", "MCU"],
     current: false,
@@ -22,25 +20,22 @@ const experiences = [
   {
     company: "FPT Polytechnic",
     role: "Giảng viên CNTT",
-    period: "Song song",
     description: "Giảng dạy các môn lập trình, cấu trúc dữ liệu và thuật toán.",
-    tags: ["Teaching", "Programming", "DSA"],
+    tags: ["Giảng dạy", "Lập trình", "DSA"],
     current: true,
   },
   {
     company: "FUNiX",
     role: "Mentor",
-    period: "Song song",
     description: "Hướng dẫn và mentor cho sinh viên trong các dự án thực tế.",
-    tags: ["Mentoring", "Code Review", "Projects"],
+    tags: ["Mentoring", "Code Review", "Dự án"],
     current: true,
   },
   {
     company: "NK Digital",
     role: "Founder",
-    period: "Sáng lập",
     description: "Startup chuyên về đào tạo CNTT và chuyển đổi số cho doanh nghiệp.",
-    tags: ["Startup", "Education", "Digital Transformation"],
+    tags: ["Startup", "Đào tạo", "Chuyển đổi số"],
     current: true,
   },
 ];
@@ -67,7 +62,7 @@ export function ExperienceSection() {
                   </h3>
                   {exp.current && (
                     <span className="px-2 py-0.5 text-xs font-medium bg-primary/20 text-primary rounded-full">
-                      Active
+                      Đang hoạt động
                     </span>
                   )}
                 </div>
@@ -78,18 +73,15 @@ export function ExperienceSection() {
                 <p className="text-muted-foreground text-sm mt-2">{exp.description}</p>
               </div>
               
-              <div className="flex flex-col items-start lg:items-end gap-3">
-                <span className="text-sm text-muted-foreground">{exp.period}</span>
-                <div className="flex flex-wrap gap-2">
-                  {exp.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="px-3 py-1 text-xs font-medium bg-secondary text-muted-foreground rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+              <div className="flex flex-wrap gap-2">
+                {exp.tags.map((tag, tagIndex) => (
+                  <span
+                    key={tagIndex}
+                    className="px-3 py-1 text-xs font-medium bg-secondary text-muted-foreground rounded-full"
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
             </div>
           </div>

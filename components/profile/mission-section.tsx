@@ -12,23 +12,23 @@ export function MissionSection() {
           <div className="flex items-center gap-3 mb-6">
             <Target className="w-8 h-8 text-primary" />
             <h2 className="text-2xl lg:text-3xl font-bold text-foreground">
-              Su Menh
+              Sứ Mệnh
             </h2>
           </div>
           
           <blockquote className="text-xl lg:text-2xl text-foreground font-medium leading-relaxed mb-10 border-l-4 border-primary pl-6">
-            Thu hep khoang cach giua giang duong va doanh nghiep.
+            Thu hẹp khoảng cách giữa giảng đường và doanh nghiệp.
           </blockquote>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* For Students */}
+            {/* Dành cho Sinh viên */}
             <div className="p-6 rounded-2xl bg-card border border-border">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 rounded-lg bg-primary/10">
                   <Users className="w-5 h-5 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground">
-                  Danh cho Sinh vien tai Nghe An
+                  Dành cho Sinh viên tại Nghệ An
                 </h3>
               </div>
               
@@ -36,26 +36,26 @@ export function MissionSection() {
                 <li className="flex items-start gap-3">
                   <Sparkles className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">
-                    Cung cap he sinh thai cong cu de kham pha sau hon ve dong chay cong nghe.
+                    Cung cấp hệ sinh thái công cụ để khám phá sâu hơn về dòng chảy công nghệ.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Sparkles className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">
-                    Trang bi tu duy &ldquo;thuc chien&rdquo; de sinh vien tu tin buoc vao thi truong lao dong toan cau day bien dong.
+                    Trang bị tư duy "thực chiến" để sinh viên tự tin bước vào thị trường lao động toàn cầu đầy biến động.
                   </span>
                 </li>
               </ul>
             </div>
             
-            {/* For Office Workers */}
+            {/* Dành cho Nhân viên Văn phòng */}
             <div className="p-6 rounded-2xl bg-card border border-border">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 rounded-lg bg-primary/10">
                   <Briefcase className="w-5 h-5 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground">
-                  Danh cho Nhan vien Van phong
+                  Dành cho Nhân viên Văn phòng
                 </h3>
               </div>
               
@@ -63,13 +63,13 @@ export function MissionSection() {
                 <li className="flex items-start gap-3">
                   <Sparkles className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">
-                    Lam chu cac cong cu AI hien dai de giai phong suc lao dong.
+                    Làm chủ các công cụ AI hiện đại để giải phóng sức lao động.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Sparkles className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">
-                    Toi uu hoa bo cong cu Microsoft Office va xay dung lo trinh chuyen doi so ca nhan, giup tang hieu suat cong viec len gap nhieu lan.
+                    Tối ưu hóa bộ công cụ Microsoft Office và xây dựng lộ trình chuyển đổi số cá nhân, giúp tăng hiệu suất công việc lên gấp nhiều lần.
                   </span>
                 </li>
               </ul>

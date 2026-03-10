@@ -23,7 +23,7 @@ export function HeroSection() {
               Cao Xuan Nam
             </h1>
             <p className="text-xl lg:text-2xl text-primary font-medium mb-6">
-              Software Engineer & Tech Educator
+              Kỹ sư Phần mềm & Nhà Đào tạo Công nghệ
             </p>
             <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed">
               Kỹ sư phần mềm với 6 năm kinh nghiệm tại các tập đoàn đa quốc gia. 

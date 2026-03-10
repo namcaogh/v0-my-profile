@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "Gioi thieu", href: "#about" },
-  { label: "Kinh nghiem", href: "#experience" },
-  { label: "Su menh", href: "#mission" },
-  { label: "Lien he", href: "#contact" },
+  { label: "Giới thiệu", href: "#about" },
+  { label: "Kinh nghiệm", href: "#experience" },
+  { label: "Sứ mệnh", href: "#mission" },
+  { label: "Liên hệ", href: "#contact" },
 ];
 
 export function Navigation() {
