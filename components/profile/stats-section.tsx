@@ -6,26 +6,26 @@ const stats = [
   {
     icon: Code,
     value: "6+",
-    label: "Năm Kỹ sư phần mềm",
-    description: "Kinh nghiệm làm việc tại các tập đoàn đa quốc gia",
+    label: "Năm Kỹ sư Phần mềm",
+    description: "Kinh nghiệm thực chiến tại các tập đoàn đa quốc gia hàng đầu",
   },
   {
     icon: GraduationCap,
     value: "3+",
     label: "Năm Đào tạo & Giảng dạy",
-    description: "Đào tạo hàng trăm sinh viên và học viên CNTT",
+    description: "Dẫn dắt và đào tạo hàng trăm sinh viên, học viên ngành CNTT",
   },
   {
     icon: Building2,
     value: "2",
-    label: "Tập đoàn công nghệ",
-    description: "Robert Bosch & Renesas Electronics",
+    label: "Tập đoàn lớn",
+    description: "Từng cống hiến tại Robert Bosch & Renesas Electronics",
   },
   {
     icon: Rocket,
-    value: "1",
+    value: "2",
     label: "Startup sáng lập",
-    description: "NK Digital - Chuyển đổi số doanh nghiệp",
+    description: "Founder của NK Digital & IMOD Academy",
   },
 ];
 

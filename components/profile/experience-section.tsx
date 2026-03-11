@@ -1,82 +1,94 @@
 "use client";
 
-import { Building2, ExternalLink } from "lucide-react";
+import { Cpu, GraduationCap, Rocket } from "lucide-react";
 
-const experiences = [
+const experienceCategories = [
   {
-    company: "Robert Bosch Việt Nam",
-    role: "Kỹ sư Phần mềm",
-    description: "Phát triển phần mềm nhúng cho các sản phẩm automotive và IoT.",
-    tags: ["Embedded", "Automotive", "C/C++"],
+    title: "Lĩnh vực Kỹ thuật & Công nghệ",
+    icon: Cpu,
+    items: [
+      {
+        company: "Robert Bosch Việt Nam",
+        role: "Kỹ sư Phần mềm",
+      },
+      {
+        company: "Renesas Electronics",
+        role: "Kỹ sư Phần mềm",
+      },
+    ],
   },
   {
-    company: "Renesas Electronics",
-    role: "Kỹ sư Phần mềm",
-    description: "Phát triển firmware và driver cho các vi điều khiển công nghiệp.",
-    tags: ["Firmware", "Driver", "MCU"],
+    title: "Lĩnh vực Đào tạo & Mentoring",
+    icon: GraduationCap,
+    items: [
+      {
+        company: "FPT Polytechnic",
+        role: "Giảng viên CNTT",
+        description: "Giảng dạy lập trình căn bản, Cấu trúc dữ liệu và Giải thuật.",
+      },
+      {
+        company: "Funix",
+        role: "Mentor",
+        description: "Đồng hành, Code Review và hướng dẫn sinh viên thực hiện các dự án thực tế.",
+      },
+    ],
   },
   {
-    company: "FPT Polytechnic",
-    role: "Giảng viên CNTT",
-    description: "Giảng dạy các môn lập trình, cấu trúc dữ liệu và thuật toán.",
-    tags: ["Giảng dạy", "Lập trình", "DSA"],
-  },
-  {
-    company: "Funix",
-    role: "Mentor",
-    description: "Hướng dẫn và mentor cho sinh viên trong các dự án thực tế.",
-    tags: ["Mentoring", "Code Review", "Dự án"],
-  },
-  {
-    company: "NK Digital",
-    role: "Founder",
-    description: "Cung cấp giải pháp phần mềm.",
-    tags: ["Phần mềm", "Giải pháp", "Công nghệ"],
-  },
-  {
-    company: "IMOD Academy",
-    role: "Founder",
-    description: "Startup chuyên về đào tạo CNTT và chuyển đổi số cho doanh nghiệp.",
-    tags: ["Startup", "Đào tạo", "Chuyển đổi số"],
+    title: "Khởi nghiệp & Lãnh đạo",
+    icon: Rocket,
+    items: [
+      {
+        company: "NK Digital",
+        role: "Founder",
+        description: "Cung cấp các giải pháp phần mềm và lộ trình chuyển đổi số tối ưu cho doanh nghiệp.",
+      },
+      {
+        company: "IMOD Academy",
+        role: "Founder",
+        description: "Học viện chuyên sâu về đào tạo CNTT và tư vấn giải pháp công nghệ.",
+      },
+    ],
   },
 ];
 
 export function ExperienceSection() {
   return (
     <section className="py-16">
-      <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-8 flex items-center gap-3">
-        <Building2 className="w-8 h-8 text-primary" />
-        Kinh Nghiệm Làm Việc
+      <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-10">
+        Kinh Nghiệm Chuyên Môn
       </h2>
       
-      <div className="space-y-4">
-        {experiences.map((exp, index) => (
-          <div
-            key={index}
-            className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300"
-          >
-            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-              <div className="flex-1">
-                <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors mb-2">
-                  {exp.role}
-                </h3>
-                <p className="text-primary font-medium flex items-center gap-2">
-                  {exp.company}
-                  <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </p>
-                <p className="text-muted-foreground text-sm mt-2">{exp.description}</p>
+      <div className="space-y-10">
+        {experienceCategories.map((category, catIndex) => (
+          <div key={catIndex}>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-2 rounded-lg bg-primary/10">
+                <category.icon className="w-5 h-5 text-primary" />
               </div>
-              
-              <div className="flex flex-wrap gap-2">
-                {exp.tags.map((tag, tagIndex) => (
-                  <span
-                    key={tagIndex}
-                    className="px-3 py-1 text-xs font-medium bg-secondary text-muted-foreground rounded-full"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
+              <h3 className="text-lg font-semibold text-primary">
+                {category.title}
+              </h3>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {category.items.map((item, itemIndex) => (
+                <div
+                  key={itemIndex}
+                  className="group p-5 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300"
+                >
+                  <p className="text-base font-semibold text-foreground group-hover:text-primary transition-colors">
+                    {item.company}
+                  </p>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    {item.role}
+                  </p>
+                  {item.description && (
+                    <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
+                      {item.description}
+                    </p>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         ))}

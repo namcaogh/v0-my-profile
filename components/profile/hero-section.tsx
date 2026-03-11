@@ -20,14 +20,13 @@ export function HeroSection() {
           
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-4 tracking-tight">
-              Cao Xuan Nam
+              CAO XUÂN NAM
             </h1>
             <p className="text-xl lg:text-2xl text-primary font-medium mb-6">
-              Kỹ sư Phần mềm & Nhà Đào tạo Công nghệ
+              Software Engineer | Tech Founder | IT Educator
             </p>
-            <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed">
-              Kỹ sư phần mềm với 6 năm kinh nghiệm tại các tập đoàn đa quốc gia. 
-              Đam mê đào tạo và chia sẻ kiến thức công nghệ cho thế hệ kỹ sư tương lai.
+            <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed italic">
+              "Sự kết hợp giữa tư duy kỹ thuật chính xác từ các tập đoàn đa quốc gia và tâm huyết trong việc chuyển đổi số, đào tạo thế hệ trẻ."
             </p>
             
             <div className="flex items-center justify-center lg:justify-start gap-4 mt-8">
